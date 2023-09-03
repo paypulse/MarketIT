@@ -40,7 +40,7 @@ public class OrderEntity {
     private String deleveryAddress;
 
     @Column
-    private char orderYn;
+    private String orderYn;
 
     @Column
     private String deleveryWay;
