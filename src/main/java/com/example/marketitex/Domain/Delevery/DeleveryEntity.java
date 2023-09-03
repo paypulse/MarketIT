@@ -14,7 +14,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity(name="DeleveryEntity")
+@Entity(name="Delevery")
 public class DeleveryEntity {
 
     @Id
@@ -24,7 +24,7 @@ public class DeleveryEntity {
     private String deleveryNm;
 
     @Column
-    private String deleveryYn;
+    private char deleveryYn;
 
     @Column
     private int deleveryTip;

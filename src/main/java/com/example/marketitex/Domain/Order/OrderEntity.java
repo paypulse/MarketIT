@@ -15,11 +15,11 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity(name="OrderEntity")
+@Entity(name="Order")
 public class OrderEntity {
 
     @Id
-    private String orderId;
+    private int orderId;
 
     @Column
     private String customerId;
@@ -40,7 +40,7 @@ public class OrderEntity {
     private String deleveryAddress;
 
     @Column
-    private String orderYn;
+    private char orderYn;
 
     @Column
     private String deleveryWay;

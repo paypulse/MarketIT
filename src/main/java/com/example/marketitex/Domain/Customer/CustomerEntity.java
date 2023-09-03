@@ -15,7 +15,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity(name="CustomerEntity")
+@Entity(name="Customer")
 public class CustomerEntity {
 
     @Id
@@ -34,6 +34,6 @@ public class CustomerEntity {
     private Timestamp createDt;
 
     @Column
-    private Timestamp modDt;
+    private Timestamp modiDt;
 
 }
