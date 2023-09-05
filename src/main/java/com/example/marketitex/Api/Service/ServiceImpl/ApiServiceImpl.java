@@ -23,16 +23,17 @@ public class ApiServiceImpl implements ApiService {
         int result =0;
 
         Map<String,Object> reqMap = new HashMap<>();
+        reqMap.put("store_cd", req.getStoreCd());
+        reqMap.put("order_cd", "BLF0002");
+        reqMap.put("product_cnt", req.getProductCnt());
+        reqMap.put("product_pay", req.getProductPay());
+        reqMap.put("delevery_address", req.getDeleveryAddress());
+        reqMap.put("order_yn", "B0");
+        reqMap.put("delevery_way", req.getDeleveryWay());
+        reqMap.put("customer_id", req.getCustomerId());
 
+        return orderRepository.insertOrder(reqMap);
 
-
-
-
-        
-
-
-
-        return 0;
     }
 
     @Override
