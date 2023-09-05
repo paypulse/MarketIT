@@ -21,6 +21,9 @@ public class OrderReq {
     private int productPay;
     //상품 수량
     private int productCnt;
+    //상점 명
+    private String storeCd;
+
 
 
 }
